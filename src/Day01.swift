@@ -11,11 +11,11 @@ let numberMap: [String: Int] = [
   "nine": 9,
 ]
 
-public func part1(lines: [String]) -> Int {
+public func day01part1(lines: [String]) -> Int {
   return findCalibration(lines: lines)
 }
 
-public func part2(lines: [String]) -> Int {
+public func day01part2(lines: [String]) -> Int {
   return findCalibration(lines: lines, findString: true)
 }
 
