@@ -27,6 +27,32 @@ public func day02part1(lines: [String]) -> Int {
   return result
 }
 
+public func day02part2(lines: [String]) -> Int {
+  var result = 0
+  for index in lines.indices {
+    var maxRed = 0
+    var maxGreen = 0
+    var maxBlue = 0
+    let games = lines[index].components(separatedBy: ";")
+    for game in games {
+      let red = findDigit(in: game, color: "red")
+      let green = findDigit(in: game, color: "green")
+      let blue = findDigit(in: game, color: "blue")
+      if red > maxRed {
+        maxRed = red
+      }
+      if green > maxGreen {
+        maxGreen = green
+      }
+      if blue > maxBlue {
+        maxBlue = blue
+      }
+    }
+    result += maxRed * maxGreen * maxBlue
+  }
+  return result
+}
+
 func findDigit(in input: String, color: String) -> Int {
     let pattern = "(\\d+)\\s*" + color
     
