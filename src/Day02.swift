@@ -6,7 +6,7 @@ let maxCubes: [String: Int] = [
   "blue": 14,
 ]
 
-public func day02part1(lines: [String]) -> Int {
+func day02part1(lines: [String]) -> Int {
   var result = 0
   for index in lines.indices {
     let games = lines[index].components(separatedBy: ";")
@@ -27,7 +27,7 @@ public func day02part1(lines: [String]) -> Int {
   return result
 }
 
-public func day02part2(lines: [String]) -> Int {
+func day02part2(lines: [String]) -> Int {
   var result = 0
   for index in lines.indices {
     var maxRed = 0
@@ -53,7 +53,7 @@ public func day02part2(lines: [String]) -> Int {
   return result
 }
 
-func findDigit(in input: String, color: String) -> Int {
+private func findDigit(in input: String, color: String) -> Int {
     let pattern = "(\\d+)\\s*" + color
     
     let regex = try? NSRegularExpression(pattern: pattern)

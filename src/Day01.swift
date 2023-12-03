@@ -11,15 +11,15 @@ let numberMap: [String: Int] = [
   "nine": 9,
 ]
 
-public func day01part1(lines: [String]) -> Int {
+func day01part1(lines: [String]) -> Int {
   return findCalibration(lines: lines)
 }
 
-public func day01part2(lines: [String]) -> Int {
+func day01part2(lines: [String]) -> Int {
   return findCalibration(lines: lines, findString: true)
 }
 
-func findCalibration(lines: [String], findString: Bool = false) -> Int {
+private func findCalibration(lines: [String], findString: Bool = false) -> Int {
   var result = 0
 
   for line in lines {
@@ -46,7 +46,7 @@ func findCalibration(lines: [String], findString: Bool = false) -> Int {
   return result
 }
 
-func wordToNum(string: String, dictionary: [String: Int]) -> Int? {
+private func wordToNum(string: String, dictionary: [String: Int]) -> Int? {
   for (word, num) in dictionary {
     if string.hasPrefix(word) {
       return num
