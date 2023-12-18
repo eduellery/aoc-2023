@@ -1,12 +1,9 @@
 public protocol Runnable {
-  static var input: String { get }
   init(input: String)
   func run()
 }
 
 public protocol Day: Runnable {
-  var day: String { get }
-
   associatedtype Solution1
   func part1() -> Solution1
 
