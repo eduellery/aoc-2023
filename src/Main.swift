@@ -6,7 +6,7 @@ struct AdventOfCode {
   static func main() {
     for day in days {
       do {
-        let input = "test/" + String("\(day)").lowercased() + ".in"
+        let input = "resource/" + String("\(day)").lowercased() + ".in"
         let content = try String(contentsOfFile: input, encoding: .utf8)
         day.init(input: content).run()
       } catch {
