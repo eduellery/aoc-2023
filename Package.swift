@@ -7,6 +7,6 @@ let package = Package(
     platforms: [ .macOS(.v14) ],
     targets: [
         .executableTarget(name: "AoC2023", path: "src"),
-        .testTarget(name: "AoC2023Test", dependencies: [ "AoC2023" ], path: "test")
+        .testTarget(name: "AoC2023PackageTests", dependencies: [ "AoC2023" ], path: "test")
     ]
 )
