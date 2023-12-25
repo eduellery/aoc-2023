@@ -10,8 +10,6 @@ My answers for Advent of Code 2023.[^disclaimer]
 
 Language of choice: [Swift](https://www.swift.org/)
 
-## Stars
-
 <!--- advent_readme_stars table --->
 ## 2023 Results
 
@@ -20,7 +18,6 @@ Language of choice: [Swift](https://www.swift.org/)
 | [Day 1](https://adventofcode.com/2023/day/1) | ⭐ | ⭐ |
 | [Day 2](https://adventofcode.com/2023/day/2) | ⭐ | ⭐ |
 | [Day 3](https://adventofcode.com/2023/day/3) | ⭐ | ⭐ |
-<!--- advent_readme_stars table --->
 
 [^disclaimer]: **Disclaimer**: I do AoC for fun and to learn new languages and new tricks. Part of my learning process (also for fun, even if I
 already have experience with some language), is to check what other users do and learn things from them. I can't help but incorporate

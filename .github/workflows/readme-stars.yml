@@ -1,7 +1,7 @@
 name: Update README ⭐
 on:
   schedule:
-    - cron: "0 */8 * * *"  # Every 8 hours
+    - cron: "8 5 13 */4 *"  # Every 8 hours
   workflow_dispatch:
 
 jobs:
@@ -19,4 +19,4 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Update README stars
-          commit_user_name: AoC stars bot
+          commit_user_name: AoC stars bot 🎄⭐️🤖
