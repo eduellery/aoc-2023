@@ -10,6 +10,10 @@ My answers for Advent of Code 2023.[^disclaimer]
 
 Language of choice: [Swift](https://www.swift.org/)
 
+## Stars
+
+<!--- advent_readme_stars table --->
+
 [^disclaimer]: **Disclaimer**: I do AoC for fun and to learn new languages and new tricks. Part of my learning process (also for fun, even if I
 already have experience with some language), is to check what other users do and learn things from them. I can't help but incorporate
 their cool, clean, concise ideas into my code. Sometimes their code is *so* much better than mine that I end up replacing my whole code!
