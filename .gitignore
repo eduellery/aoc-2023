@@ -1,4 +1,6 @@
 .DS_Store
+.aocsession
+*.in
 
 # Xcode
 #
