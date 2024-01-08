@@ -6,7 +6,7 @@ final class Day01Tests: XCTestCase {
   let local = FileManager.default.fileExists(atPath: "resource/day01.in")
   let test1 = Day01(input: getContent(path: "resource/day01part1.test"))
   let test2 = Day01(input: getContent(path: "resource/day01part2.test"))
-  let input = Day01(input: getContent(path: "resource/day01.in"))
+  lazy var input = local ? Day01(input: getContent(path: "resource/day01.in")) : Day01(input: "")
 
   func testDay01_part1_test() throws {
     XCTAssertEqual(test1.part1(), 142)
